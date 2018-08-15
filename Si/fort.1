@@ -1,16 +1,16 @@
 # RSDFT
 XCtype 'LDAPZ81'
-NK  8                             / nk
-MMM1  5  5  5                     / mmm(1:3,2)
-MMM2  2  2  2                     / mmm(1:3,2)
 NGRID 16  16  16                  / Ngrid(1:3)
 PP 2 'Si_psv.dat'                 / ippform(1) file_ps(1)
 scfconv 1.d-20                    / scf_conv
 PROCS  2 2 2 1 1 1                / np_2d(1:6)
 Diter 100                         / Diter
 Nsweep 10                         / Nsweep
+IMIX 1                            / imix 
+MMIX 2                            / MMIX
 IC  0                             / IC
 OC  3                             / OC
+IOCTRL 0                          / IOCTRL
 SWSCF  1                          / scf
 ETLIMIT  1.d10                    / etime_limit
 INFOLEVEL 1                       / info_level
